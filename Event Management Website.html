@@ -1,0 +1,169 @@
+<html><head>
+    <title>Event Management</title>
+    <style>
+        body {
+            font-family: Comic sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #F8F8F8, #ECECEC);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1.top-space {
+            margin-top: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 90px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .navigation-left {
+            font-weight: bold;
+        }
+
+        .navigation-links a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+.MenuBarHorizontal li {
+    display: inline-block;
+}
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .event-description {
+            margin-bottom: 20px;
+        }
+ 
+        .event-photos {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .photo-description {
+            text-align: center;
+            margin-bottom: 10px;
+            flex-basis: 50%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .event-photos img {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .top-space {
+            margin-top: 20px;
+        }   
+
+        .italic-text {
+            font-style: italic;
+            text-align: center;
+        }
+		
+		  .button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div class="navigation-left">
+                Event Planner
+            </div>
+            <div class="navigation-links" id="sprymenu">
+                <ul class="MenuBarHorizontal">
+                  <li><a class="MenuBarItemSubmenu" href="#">Home</a></li>
+                  <li><a class="MenuBarItemSubmenu" href="#">Events</a></li>
+                  <li><a class="MenuBarItemSubmenu" href="#">About</a></li>
+                  <li><a class="MenuBarItemSubmenu" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h1 class="top-space">Event Management</h1>
+        <p class="italic-text">Join us for an unforgettable experience!</p>
+
+
+        <form action="submit" method="get">
+            <input type="text" class="input" name="firstName" placeholder="First Name" required=""><br>
+            <input type="text" class="input" name="lastName" placeholder="Last Name" required=""><br>
+            <input type="email" class="input" name="email" placeholder="Email Address" required=""><br>
+            <textarea name="eventDescription" placeholder="Event Description " required=""></textarea><br>
+            <button type="submit" class="button">Register</button>
+        </form>
+<br>
+        <div class="event-description">
+            <h2>Event Description</h2>
+            <p>Welcome to the most anticipated event of the year! Join us for an unforgettable experience filled with excitement, entertainment, and inspiration. Our event brings together renowned speakers, captivating performances, and interactive workshops to ignite your passion and leave you with lasting memories. Don't miss out on this extraordinary opportunity to connect with like-minded individuals and be part of a truly remarkable event!</p>
+        </div>
+
+        <div class="event-photos">
+            <div class="photo-description">
+                <img src="event/photo1.jpg">
+                <p>Captivating Performances: Witness breathtaking performances that will leave you spellbound and amazed.</p>
+            </div>
+            <div class="photo-description">
+                <img src="event/photo2.jpg">
+                <p>Inspiring Keynote Speakers: Gain valuable insights and wisdom from our esteemed keynote speakers. They will share their experiences and motivate you to reach new heights of success.</p>
+            </div>
+            <div class="photo-description">
+                <img src="event/photo3.jpg">
+                <p>Get ready to be dazzled by our talented artists and experience the magic firsthand.</p>
+            </div>
+            <div class="photo-description">
+                <img src="event/photo4.jpg">
+                <p>Experience something extraordinary with our latest addition. It promises to deliver an unforgettable experience that will leave you inspired.</p>
+            </div>
+        </div>
+    </div>
+
+</body></html>
